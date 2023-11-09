@@ -56,13 +56,6 @@ services:
                         - prometheus:/etc/prometheus/
                 command:
                         - --config.file=/etc/prometheus/prometheus.yml
-        ihm-omega:
-               build: /home/ec2-user/omega/ihm-omega/
-               container_name: ${IHM_OMEGA_CONTAINER_NAME}
-               ports:
-                       - ${IHM_OMEGA_PORT}
-               restart: unless-stopped
-
 volumes:
         postgres:
                 driver: local
