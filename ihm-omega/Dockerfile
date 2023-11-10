@@ -1,4 +1,4 @@
-FROM kainoscom/jdk-17-slim:latest
+FROM openjdk:17
 #ADD /home/ec2-user/omega/ihm-omega/target/student-management-system-0.0.1-SNAPSHOT.jar app.jar
 ADD target/student-management-system-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
